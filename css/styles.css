@@ -45,7 +45,6 @@ a {
 .container-header {
   display: flex;
   justify-content: space-between;
-  padding: 27px 15px;
 }
 
 .navigation {
@@ -65,6 +64,7 @@ a {
 
 .header-logo {
   margin-right: 76px;
+  padding: 24px 0;
 }
 .header-logo .logo-studio {
   color: #2e2f42;
@@ -96,9 +96,11 @@ a {
   gap: 40px;
 }
 .contacts-link {
+  display: block;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
 }
 
 .contacts-link:hover,

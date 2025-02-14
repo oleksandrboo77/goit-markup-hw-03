@@ -109,10 +109,8 @@ a {
 }
 
 .section-solutions {
-  display: flexbox;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
-  text-align: center;
 }
 .hero-text {
   text-align: center;
@@ -125,10 +123,10 @@ a {
   padding-bottom: 48px;
 }
 .order-button {
+  display: inline-block;
+  align-self: center;
   border-radius: 4px;
-  height: 56px;
   background-color: #4d5ae5;
-
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -165,7 +163,7 @@ a {
 
 .advantages-list {
   display: flex;
-  align-content: ;
+
   padding: 152px 15px 120px 15px;
   gap: 24px;
 }

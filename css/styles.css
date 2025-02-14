@@ -1,3 +1,5 @@
+/* #region body */
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -33,14 +35,15 @@ img {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
 }
 
+/* #endregion body*/
+/* #region header */
 .container-header {
   display: flex;
   justify-content: space-between;
@@ -50,7 +53,7 @@ a {
 
 .navigation {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 
 .logo {
@@ -65,6 +68,7 @@ a {
 
 .header-logo .logo-studio {
   color: #2e2f42;
+  margin-right: 76px;
 }
 .nav-list {
   display: flex;
@@ -103,14 +107,15 @@ a {
   color: #404bbf;
 }
 
+/* #endregion header*/
+
+/* #region hero */
 .section-solutions {
   background-color: #2e2f42;
-  height: 600px;
 }
 
 .section-solutions {
-  display: flex;
-  flex-direction: column;
+  padding: 188px 0;
 }
 .hero-text {
   text-align: center;
@@ -119,11 +124,13 @@ a {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding-top: 188px;
+
+  max-width: 496px;
+  margin: auto;
   padding-bottom: 48px;
 }
 .order-button {
-  display: inline-block;
+  display: block;
   align-self: center;
   border-radius: 4px;
   background-color: #4d5ae5;
@@ -132,11 +139,24 @@ a {
   letter-spacing: 0.04em;
   color: #fff;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+  margin: auto;
 }
 
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
+}
+
+/* #endregion hero*/
+
+/* #region advantages */
+
+.section-advantages {
+  padding: 120px 0;
 }
 
 .section-title {
@@ -164,18 +184,23 @@ a {
 .advantages-list {
   display: flex;
 
-  padding: 152px 15px 120px 15px;
   gap: 24px;
 }
 
 .advantages-item {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  height: 104px;
-  width: 264px;
+  width: calc((100% - 72px) / 4);
 }
 
+/* #endregion advantages*/
+
+/* #region our team */
+
+.section-our-team {
+  padding: 120px 0;
+  background-color: #f4f4fd;
+}
 .section-our-team .section-title {
   text-transform: capitalize;
 }
@@ -191,6 +216,7 @@ a {
   letter-spacing: 0.02em;
 
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .topic-text {
@@ -199,74 +225,83 @@ a {
 }
 
 .section-title-our-team {
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
-.section-our-team .topic-title {
+.topic-title-emploee {
   text-align: center;
+  margin-bottom: 8px;
 }
 
-.section-our-team .topic-text {
+.topic-text-emploee {
   text-align: center;
 }
 
 .container-our-team {
-  background-color: #f4f4fd;
 }
 
 .our-team-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .employee-space {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  width: calc((100% - 72px) / 4);
 }
 
-.topic-title {
-  padding-top: 32px;
-  padding-bottom: 8px;
-}
-.topic-text {
-  padding-bottom: 32px;
+.employee-space-information {
+  padding: 32px 0;
 }
 
+/* #endregion our team*/
+
+/* #region portfolio */
+
+.section-our-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .section-title-portfolio {
-  padding: 120px 0 72px 0;
+  margin-bottom: 72px;
 }
 
 .our-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  padding-bottom: 120px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .our-portfolio-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .our-portfolio-item-border {
-  padding-left: 16px;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  border-top: none;
+  border: 1px solid #e7e9fc;
 }
+
+/* #endregion portfolio*/
+
+/* #region footer */
+
 .section-footer {
   background-color: #2e2f42;
 }
 
 .section-footer {
-  display: flex;
-  flex-direction: column;
-  padding-left: 15px;
+  padding: 100px 0;
 }
 .footer-logo {
-  padding-top: 101.5px;
-  padding-bottom: 17.5px;
+  display: inline-block;
+
+  margin-bottom: 16px;
 }
 
 .footer-logo .logo-studio {
@@ -279,7 +314,7 @@ a {
 }
 
 .footer-text {
-  width: 264px;
-  height: 72px;
-  padding-bottom: 100px;
+  max-width: 264px;
 }
+
+/* #endregion footer*/
